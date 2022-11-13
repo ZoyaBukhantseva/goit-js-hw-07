@@ -15,8 +15,6 @@ function createGalleryCard(galleryItems) {
    }).join('')
   
 } 
-const gallery = new SimpleLightbox('ul.gallery a');
- gallery.on('show.simplelightbox', function () {
-    gallery.options.captionDelay = 250;
-  })
+const gallery = new SimpleLightbox('ul.gallery a', {captionsData:'alt',captionDelay:250,});
+ 
 console.log(galleryItems);
